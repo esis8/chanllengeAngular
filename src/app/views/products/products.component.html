@@ -1,0 +1,20 @@
+<table class="table table-striped text-center">
+  <thead>
+    <tr>
+      <th scope="col">Category</th>
+      <th scope="col">Code</th>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody *ngIf="products">
+    <tr *ngFor="let product of products">
+      <td>{{ product.Cat_Name }}</td>
+      <td>{{ product.Code }}</td>
+      <td>{{ product.Name}}</td>
+      <td>{{ product.Descripcion }}</td>
+    </tr>
+  </tbody>
+</table>
+
+
